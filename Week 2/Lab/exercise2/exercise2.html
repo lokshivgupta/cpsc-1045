@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Website of Websites</title>
+	  <!--
+  ====================================== 
+              STYLE BELOW 
+  ======================================
+  -->
+      <style>
+		div{
+			border: solid black 2px;
+			margin-bottom: 2px;
+		}
+		header{
+			border: solid red 2px;
+			margin: 3px;
+		}
+		nav{
+			border: solid green 2px;
+			margin: 3px;
+		}
+		main{
+			border: solid blue 2px;
+			margin: 3px;
+		}
+		footer{
+			border: solid orange 2px;
+			margin: 3px;
+		}
+		h1{
+			border: solid yellow 2px;
+			margin: 3px;
+		}
+		#para{
+			border: solid purple 2px;
+			margin: 3px;
+		}
+		
+      </style>
+<!--
+Note, the <style> tag is closed so we are done with CSS, now moving back to HTML.
+-->
+	
+  </head>
+  <body>
+  <div class="container">
+	<p>This is an outer container div, it holds all of the content of my page</p>
+		<header>
+			<p>This is the header. It usually contains the name of the site.</p>
+		</header>
+		<nav>
+			<p>This is the navigation area. There are a collection of links here.</p>
+			<a href="http://www.reddit.com" class="selected">Reddit</a>
+			<a href="http://www.facebook.com">Facebook</a>
+			<a href="https://www.google.com/design/spec/style/color.html/">Google Color Use Guidelines</a>
+		</nav>
+		<main>
+			<p>This is the area for main content.</p>
+			<h1>This is a header!</h1>
+			<p id="para">This is a paragraph of content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut vestibulum elit. Nullam feugiat vulputate nisi, sit amet gravida massa iaculis a. Vestibulum arcu augue, mollis ut varius nec, venenatis sit amet sem. Nunc tellus nisl, cursus a dignissim vitae, scelerisque vitae diam.</p>
+		</main>
+		<footer id="myFooter">This is a footer &copy; Jamie McKee 2024</footer>
+	</div>
+	
+	<script>
+	/*Add the code for Part 2 on the line below */
+	let r = Math.floor(Math.random() * 10);
+	document.getElementById("myFooter").innerHTML = r;
+
+	</script>
+
+
+  </body>
+</html>
+
+

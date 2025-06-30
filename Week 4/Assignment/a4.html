@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang ="en">
+        <title>
+            Assignment 4
+        </title>
+        <script src = "a4.js" defer></script>
+    </head>
+    <body>
+        <h1>Assignment 4</h1>
+        <p>Enter a string and we will provide you with the ability to turn it uppercase , lower case, and determoine the length.
+            You'll also be able to grab a portion of your string
+        </p>
+        <label for ="strInput">Enter your string here: </label>
+        <input type ="text" id="strInput" name = "box1">
+
+        <br>
+        <label for = "stIndex">Start Index (inclsuive):</label>
+        <input type ="number" id="stIndex" name = "box2">
+
+        <label for ="endIndex">End Index (exclusive):</label>
+        <input type ="number" id="endIndex" name = "box3">
+
+        <p id = "p1"></p>
+
+        <button id="uCase" onclick="toUpper()"> Click to Uppercase</button>
+        <button id="lCase"> Click to Lowercase</button>
+        <button id="length"> Click to See Length</button>
+        <button id="subStr"> Click to Get String</button>
+        <button id="reset"> Click to Reset</button>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 2</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<p id="mathProblem">
+			<!-- leave this div empty!-->
+		</p>
+		
+		<script>
+			//the following line access the paragraph so we can write our word problem in it. 
+			let myPara = document.getElementById("mathProblem");
+			//add some code on the lines below to get two numbers from the user and store them in variables
+			let books = prompt("Enter the number of books: ");
+			let magazine = prompt("Enter the number of magazines: ");
+
+			books = Number(books);
+			magazine = (magazine);
+			let totalReading = Number(books) + Number(magazine);
+		
+
+
+
+
+
+			//use concatenation to write your word problem and concatenate in the numbers
+			let text = "Lokshiv has " + books + " books and " + magazine + " magazines. How many reading does he have? ";
+			let answer = "<br>A: " + totalReading;
+			
+			
+			
+			//then this line will write your word problem out to the page!
+			myPara.innerHTML = text +  answer;
+			
+		</script>
+	</body>
+</html>
