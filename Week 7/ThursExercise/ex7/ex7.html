@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
    <meta charset="utf-8">
@@ -12,4 +12,65 @@
 </body>
 
 
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Light</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Traffic Light</h1>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw the black rectangle (traffic light box)
+        ctx.fillStyle = "black";
+        ctx.fillRect(0, 0, 80, 300);  // x, y, width, height
+
+        // Draw the 3 gray circles (lights)
+        const radius = 35;
+        const centerX = 0; // middle of the black box (50 + 40)
+        const startY = 60;
+        const spacing = 90;
+
+        ctx.fillStyle = "gray";
+        for (let i = 0; i < 3; i++) {
+            let centerY = startY + i * spacing;
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+            ctx.fill();
+        }
+    </script>
+
+</body>
 </html>
+
+
+
+function findMaxMin(){
+    let max = arr[0].length;
+    let min = arr[0].length;
+
+    for(let i = 0; i < arr.length; i ++){
+        let temp = arr[i].length;
+        for(let j = 0; i < temp.length;j++){
+            if(temp > max){
+                max = arr[i];
+        }
+        if(temp < min){
+            min = arr[i];
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="a9.js" defer></script>
+    <title>Assignment 9</title>
+</head>
+<body>
+    <h1>CPSC 1045 Employee Data System</h1>
+    <form id="employeeForm">
+    <fieldset>
+       <legend>Enter Employee Information</legend>
+       <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label>Roles:</label>
+        <select id="roles"> 
+            <option value="manager">Manager</option>
+            <option value = "employee">Employee</option>
+        </select>
+        <br>
+        <button type="button" id="addEmployee">Add Employee</button>
+        <button type="button" id="removeEmployee">Remove Employee</button>
+        <button type="button" id="empty">Empty list</button>
+        <h3>Employee List:</h3>
+        <ul id="output"> 
+
+        </ul>
+    </fieldset>
+    </form>
+    <button id="count">Count By Role</button>
+    <p id="countOutput">Count Output:</p>
+</body>
+</html>
